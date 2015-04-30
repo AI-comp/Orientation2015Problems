@@ -3,7 +3,7 @@
 
 Problem Statement
 -
-
+(TBD)
 
 Input
 -
@@ -24,6 +24,7 @@ Constraints
 
 - 3 <= N <= 30
 - 1 <= i <= N なる全てのiに対して、S<sub>i</sub>の文字数をL<sub>i</sub>とすると L<sub>i</sub> = N
+- S<sub>i</sub>の各文字は全て'W''S''D'のいずれか
 
 Output
 -

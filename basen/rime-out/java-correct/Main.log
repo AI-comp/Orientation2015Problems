@@ -1,0 +1,3 @@
+javac: ファイルが見つかりません: Main.java
+使用方法: javac <options> <source files>
+使用可能なオプションのリストについては、-helpを使用します
