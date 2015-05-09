@@ -8,6 +8,10 @@
 - 入力の並び的に一度配列に保存しないと解けないのがハードル高いかも？
 
 ### [成績判定](grade/statement.md)
+
+- 団体戦より簡単
+- 2問目としていい気がする
+
 ### [とかげ算](lizard/statement.md)
 ### [椅子取りゲーム](chairs/statement.md)
 ### [白黒分け](blackwhite/statement.md)
