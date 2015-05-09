@@ -7,40 +7,53 @@ Problem Statements
 あなたは群島国家の管理者である。この国には、V個の島(1からVまでの番号で管理されている)と、2つの異なる島をつなぐE個の橋がある。
 島Xから島Yにいくつかの橋を通って移動できるとき、XとYは「相互移動可能」と呼ぶことにする。
 
-V個の島全てのペアについて、「相互移動可能」にするために、あなたは新しく橋を作ることができる。
-目的達成のために、少なくとも橋はいくつ必要か出力せよ。
-ただし、全てのペアについて既に「相互移動可能」である状態ならば、0 を出力せよ。
+V個の島全てのペアについて、「相互移動可能」にするために、あなたは新しく橋を作ることにした。
+目的達成のために、新しい橋は少なくともいくつ必要か求めよ。
+ただし、全ての島のペアについて既に「相互移動可能」である状態ならば、0 を出力せよ。
 
 Input
 -
 
-入力は複数のデータセットで構成され、1つのデータセットは以下の形式で表される。
+入力は以下の形式で表される。
 
-> V E<br>
-> S<sub>1</sub> G<sub>1</sub><br>
-> S<sub>2</sub> G<sub>2</sub><br>
+> D<br>
+> V<sub>1</sub> E<sub>1</sub><br>
+> S<sub>11</sub> G<sub>11</sub><br>
+> S<sub>12</sub> G<sub>12</sub><br>
 > :<br>
-> S<sub>E</sub> G<sub>E</sub><br>
+> S<sub>1E<sub>1</sub></sub> G<sub>1E<sub>1</sub></sub><br>
+> V<sub>2</sub> E<sub>2</sub><br>
+> S<sub>21</sub> G<sub>21</sub><br>
+> S<sub>22</sub> G<sub>22</sub><br>
+> :<br>
+> S<sub>2E<sub>2</sub></sub> G<sub>2E<sub>2</sub></sub><br>
+> :<br>
+> V<sub>D</sub> E<sub>D</sub><br>
+> S<sub>D1</sub> G<sub>D1</sub><br>
+> S<sub>D2</sub> G<sub>D2</sub><br>
+> :<br>
+> S<sub>DE<sub>D</sub></sub> G<sub>DE<sub>D</sub></sub><br>
 
-ここでVは島の数、Eは橋の数、SおよびGは各橋がつないでいる島の番号を表す。
-
-入力の終わりは、データセットの代わりに2つの0が入力される。
+ここでDはデータセットの個数である。また、i番目のデータセットにおいて、V<sub>i</sub>は島の数、E<sub>i</sub>は橋の数、S<sub>ij</sub>およびG<sub>ij</sub>はj番目の橋がつないでいる島の番号である。
 
 Constraints
 -
 
 入力は、以下の条件をすべて満たす。
 
-* 2 <= V <= 1000
-* 0 <= E <= 1000
-* 1 <= i <= E なる全てのiについて、
-  * 1 <= S<sub>i</sub> <= V
-  * 1 <= G<sub>i</sub> <= V
-  * S<sub>i</sub> != G<sub>i</sub>
+* 1 <= D <= 100
+* 1 <= i <= D を満たすすべての整数iについて、
+    * 2 <= V<sub>i</sub> <= 1000
+    * 0 <= E<sub>i</sub> <= 1000
+    * さらに、 1 <= j <= E<sub>i</sub> を満たすすべての整数jについて、
+        * 1 <= S<sub>ij</sub> <= V<sub>i</sub>
+        * 1 <= G<sub>ij</sub> <= V<sub>i</sub>
+        * S<sub>ij</sub> != G<sub>ij</sub>
 
 Sample Input
 -
 
+    3
     3 0
     3 3
     1 2
@@ -49,7 +62,6 @@ Sample Input
     5 2
     1 2
     3 4
-    0 0
     
 Sample Output
 --

@@ -1,45 +1,76 @@
-問題文
-==
+A+B
+=
+
+Problem Statemnt
+-
+
 与えられた二つの整数の和を求めよ。
 
 なお、この問題は入出力の練習のために用意されている。
 問題の末尾にサンプルプログラムなどが示されているので、参考にせよ。
 
-入力
-==
-入力は複数のデータセットから成る。
-各データセットは、以下の形式で与えられる。
+Input
+-
 
-<pre>
-A B
-</pre>
+入力は以下の形式で表される。
 
-A, Bは整数であり、-10000 <= A <= 10000, -10000 <= B <= 10000を満たす。
+> N<br>
+> A<sub>1</sub> B<sub>1</sub><br>
+> A<sub>2</sub> B<sub>2</sub><br>
+> :<br>
+> A<sub>N</sub> B<sub>N</sub><br>
 
-入力の終了は、"0 0"と書かれた1行によって示される ("入出力の例"を参照せよ)。
+ここでNはデータセットの個数、A<sub>i</sub>およびB<sub>i</sub>はi番目のデータセットにおいて和を求める2つの整数である。
 
-出力
-==
-各データセットに対して、A+Bを1行ずつ出力せよ。
+Constraints
+-
 
-なお、入力の終了を示す"0 0"に対しては何も出力しないこと。
+入力は以下の条件をすべて満たす。
+
+* 1 <= N <= 100
+* 1 <= i <= N を満たすすべての整数iについて、
+    * -10000 <= A<sub>i</sub> <= 10000
+    * -10000 <= B<sub>i</sub> <= 10000
+
+Output
+-
+
+出力は、各データセットに対して、A+Bを1行ずつ出力せよ。
+
+Sample Input
+-
+
+    3
+    1 9
+    20 -39
+    -103 229
+
+Sample Output
+-
+
+    10
+    -19
+    126
 
 
-サンプルプログラム
-==
+Sample Program
+-
+
 * C
 
 ```
 #include <stdio.h>
 
 int main() {
-    while (1) {
-        int a, b;
+	int n, a, b, i;
+	scanf("%d", &n);
+    for (i = 0; i < n, i++) {
         scanf("%d %d", &a, &b);
         if (a == 0 && b == 0) {
             break;
         }
-        int answer = 0; /* EDIT HERE */
+        int answer = 0;
+        /* EDIT HERE */
         printf("%d\n", answer);
     }
     return 0;
@@ -54,13 +85,12 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        while (true) {
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
             int a = sc.nextInt();
             int b = sc.nextInt();
-            if (a == 0 && b == 0) {
-                break;
-            }
-            int answer = 0; // EDIT HERE
+            int answer = 0;
+            // EDIT HERE
             System.out.println(answer);
         }
     }
@@ -74,9 +104,11 @@ class Main {
 using namespace std;
 
 int main() {
-    int a, b;
-    while(cin >> a >> b, a | b) {
-        int answer = 0; // EDIT HERE
+    int n, a, b;
+    cin >> n;
+    for (int i = 0, i < 0; i++) {
+        int answer = 0;
+        // EDIT HERE
         cout << answer << endl;
     }
 }
@@ -105,10 +137,12 @@ end
 ```
 
 
-ファイルの入出力方法など
-==
-C
---
+Note
+-
+
+コンパイルやファイル入出力、プログラムの実行などは、プログラミング言語によって方法が異なるので注意すること。以下にはCとJavaの例を記載する。
+
+### C
 
 * コンパイル・実行
 
@@ -135,8 +169,7 @@ gcc main.c
 ./a.out < in.txt > out.txt
 ```
 
-Java
---
+### Java
 
 * コンパイル・実行
 
