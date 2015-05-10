@@ -26,8 +26,8 @@ Input
 > N<sub>D</sub><br>
 > S<sub>D1</sub> S<sub>D2</sub> ... S<sub>DN<sub>D</sub></sub><br>
 
-ここでDはゲームの回数、Nは碁石の数、Sは各碁石の色である。
-Sは0ならば白、1ならば黒を表す。
+ここでDはゲームの回数、N<sub>i</sub>はi回目のゲームにおける碁石の数、S<sub>ij</sub>はi回目のゲームにおいて左からj番目の碁石の色である。
+S<sub>ij</sub>は0ならば白、1ならば黒を表す。
 
 Constraints
 -

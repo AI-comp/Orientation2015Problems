@@ -2,17 +2,16 @@ import java.util.Scanner;
 
 public class Validator {
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
-		while (true) {
+		int m = sc.nextInt();
+		checkRange(m, 1, 100);
+		for (int i = 0; i < m; i++) {
 			int n = sc.nextInt();
-			if (n == 0)
-				break;
 			checkRange(n, 1, 1000);
-			for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
 				checkRange(sc.nextInt(), -10000, 10000);
 			}
-			for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
 				checkRange(sc.nextInt(), -10000, 10000);
 			}
 		}

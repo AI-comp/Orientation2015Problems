@@ -28,7 +28,7 @@ Constraints
 
 * 1 <= N <= 100
 * 1 <= i <= N を満たすすべての整数iについて、
-    * 1 <= B<sub>i</sub> <= 32
+    * 2 <= B<sub>i</sub> <= 32
     * 1 <= T<sub>i</sub> <= 1,000,000,000
 
 Output
