@@ -31,6 +31,10 @@
 - ほどほどに難しくて楽しい
 
 ### [軍人将棋](gunjin/statement.md)
+
+- めんどくさかったw
+- Vim好きな人には楽しいかも(マクロとか工夫すればスタイリッシュにコード書ける)
+
 ### [n進数](basen/statement.md)
 ### [早稲田探し](strsearch/statement.md)
 ### [ラボライフ！](lab/statement.md)
