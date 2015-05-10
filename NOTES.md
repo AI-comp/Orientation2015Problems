@@ -27,6 +27,9 @@
 - コーナーケースありそうで、拾えてなかったら恥ずかしいw
 
 ### [白黒分け](blackwhite/statement.md)
+
+- ほどほどに難しくて楽しい
+
 ### [軍人将棋](gunjin/statement.md)
 ### [n進数](basen/statement.md)
 ### [早稲田探し](strsearch/statement.md)
