@@ -42,6 +42,11 @@
 - ちょっと自信ないw
 
 ### [早稲田探し](strsearch/statement.md)
+
+- わーい探索だ！楽しい！
+- 最初、方向決めないで幅優先してミスった
+- 競プロっぽい
+
 ### [ラボライフ！](lab/statement.md)
 ### [点と直線](pointsandlines/statement.md)
 ### [島と橋](islands/statement.md)
