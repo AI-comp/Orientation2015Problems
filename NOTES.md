@@ -36,6 +36,11 @@
 - Vim好きな人には楽しいかも(マクロとか工夫すればスタイリッシュにコード書ける)
 
 ### [n進数](basen/statement.md)
+
+- 問題文の`1 <= Bi <= 32`は多分`2 <= Bi <= 32`の間違い？
+- 楽しい
+- ちょっと自信ないw
+
 ### [早稲田探し](strsearch/statement.md)
 ### [ラボライフ！](lab/statement.md)
 ### [点と直線](pointsandlines/statement.md)
