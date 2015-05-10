@@ -6,6 +6,7 @@
 ##   id: The problem ID (typically starts from A) used to order problems.
 ##   time_limit: The time limit of this problem in seconds.
 problem(title = "Islands and Bridges",
+	reference_solution = "java-correct",
         time_limit = 1.0,
         id="L",
         )

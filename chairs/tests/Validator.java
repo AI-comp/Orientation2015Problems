@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Validator {
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
-		while (true) {
+		int d = sc.nextInt();
+		for (int j = 0; j < d; j++) {
 			int n = sc.nextInt();
 			int t = sc.nextInt();
 			if ((n | t) == 0)

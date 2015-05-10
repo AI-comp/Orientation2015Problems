@@ -15,10 +15,11 @@ public class Generator {
 		File file = new File((50 + index) + "-random" + index + ".in");
 		try {
 			PrintStream stream = new PrintStream(file);
-			for (int i = 0; i < 20; i++) {
+			int d = generateRandomNum(1, 100);
+			stream.println(d);
+			for (int i = 0; i < d; i++) {
 				generateTestCase(stream);
 			}
-			stream.println("0 0");
 		} catch (FileNotFoundException e) {
 			return;
 		}

@@ -61,7 +61,7 @@ Sample Input
     2
     3 5
 
-Sample Output 1
+Sample Output
 -
 
     1

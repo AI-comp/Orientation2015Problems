@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    while (1) {
-        int a, b;
+    int a, b, n, i;
+    scanf("%d", &n);
+    for (i = 0; i < n; i++){
         scanf("%d %d", &a, &b);
-        if (a == 0 && b == 0) {
-            break;
-        }
         int answer = a + b;
         printf("%d\n", answer);
     }

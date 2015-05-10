@@ -18,10 +18,9 @@ public class Main {
 				}
 			}
 		}
-		while (true) {
+		int d = sc.nextInt();
+		for (int i = 0; i < d; i++) {
 			int n = sc.nextInt();
-			if (n == 0)
-				break;
 			System.out.println(prices[n]);
 		}
 		sc.close();

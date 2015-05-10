@@ -3,12 +3,11 @@ import java.util.Scanner;
 public class Validator {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		while (true) {
+		int d = sc.nextInt();
+		for (int i = 0; i < d; i++) {
 			int b = sc.nextInt();
 			int n = sc.nextInt();
-			if ((b | n) == 0)
-				break;
-			checkRange(b, 1, 32);
+			checkRange(b, 2, 32);
 			checkRange(n, 1, 1000000000);
 		}
 		sc.close();
