@@ -48,5 +48,10 @@
 - 競プロっぽい
 
 ### [ラボライフ！](lab/statement.md)
+
+- 楽しい
+- 最初しばらく枝刈り探索かと思ってしまった...
+- DP知らないとできなそう(この位置なら全然いいと思う)
+
 ### [点と直線](pointsandlines/statement.md)
 ### [島と橋](islands/statement.md)
