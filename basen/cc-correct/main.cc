@@ -4,6 +4,8 @@
 #include <algorithm>
 using namespace std;
 
+typedef unsigned long long ULL;
+
 char i2c(int n)
 {
   assert(0 <= n && n <= 31);
@@ -14,17 +16,21 @@ char i2c(int n)
   }
 }
 
-string i2base_n(int base, int n)
+string i2base_n(int base, ULL n)
 {
   assert(2 <= base && base <= 32);
-  int divisor = 1;
+  ULL divisor = 1;
   while (divisor * base <= n) {
     divisor *= base;
+    // cerr << "divisor: " << divisor << endl;
   }
+  // cerr << "base: " << base << endl;
+  // cerr << "n: " << n << endl;
 
   string ans = "";
   while (n) {
-    int quot = n / divisor;
+    // cerr << "divisor: " << divisor << endl;
+    ULL quot = n / divisor;
     ans += i2c(quot);
     n -= divisor * quot;
     divisor /= base;
@@ -38,7 +44,7 @@ int main()
   int N; cin >> N;
 
   while (N--) {
-    int B, T; cin >> B >> T;
+    ULL B, T; cin >> B >> T;
     cout << i2base_n(B, T) << endl;
   }
 }
