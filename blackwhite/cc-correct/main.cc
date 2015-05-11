@@ -6,7 +6,13 @@ using namespace std;
 
 int solve(vector<int>::iterator b, vector<int>::iterator e)
 {
-  while (*b == 0) {
+  cerr << "=== START ===" << endl;
+  for(vector<int>::iterator it = b; it != e; ++it) {
+    cerr << *it << " ";
+  }
+  cerr << endl;
+
+  while (*b == 0 && b != e) {
     b++;
   }
   if (b == e) {
@@ -17,7 +23,7 @@ int solve(vector<int>::iterator b, vector<int>::iterator e)
   vector<int>::iterator one = b;
 
   int ans = 0;
-  while (*b == 1) {
+  while (*b == 1 && b != e) {
     b++, ans++;
   }
   if (b == e) {
@@ -29,7 +35,14 @@ int solve(vector<int>::iterator b, vector<int>::iterator e)
 
   // swap
   *one = 0, *zero = 1;
-  return ans + solve(one + 1, e);
+  int ret = ans + solve(one + 1, e);
+
+  for(vector<int>::iterator it = b; it != e; ++it) {
+    cerr << *it << " ";
+  }
+  cerr << endl;
+  cerr << "=== END === (return: " << ret << ")" << endl;
+  return ret;
 }
 
 int main()
