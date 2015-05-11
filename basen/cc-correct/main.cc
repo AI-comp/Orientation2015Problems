@@ -35,6 +35,10 @@ string i2base_n(int base, ULL n)
     n -= divisor * quot;
     divisor /= base;
   }
+  while (divisor) {
+    ans += '0';
+    divisor /= base;
+  }
 
   return ans;
 }
