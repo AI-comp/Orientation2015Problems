@@ -5,6 +5,22 @@
 #include <algorithm>
 using namespace std;
 
+int get_leader(vector<int>* _v, int index) {
+  vector<int>& v = (*_v);
+  int i = index;
+  while (i != v[i]) {
+    i = v[i];
+  }
+  int leader = i;
+  i = index;
+  while (i != v[i]) {
+    int t = i;
+    i = v[i];
+    v[t] = leader;
+  }
+  return leader;
+}
+
 int main()
 {
   int D; cin >> D;
@@ -17,8 +33,9 @@ int main()
 
     for (int i = 0; i < E; ++i) {
       int S, G; cin >> S >> G; S--; G--;
-      if (S > G) { swap(S, G); }
-      uf[G] = uf[S];
+      int s_leader = get_leader(&uf, S);
+      int g_leader = get_leader(&uf, G);
+      uf[s_leader] = g_leader;
     }
 
     for (int i = 0; i < V; ++i) {
