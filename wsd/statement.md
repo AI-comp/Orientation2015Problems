@@ -57,7 +57,7 @@ Constraints
 * 1 <= i <= D を満たすすべての整数iについて、
     * 3 <= N<sub>i</sub> <= 30
     * さらに、1 <= j <= N<sub>i</sub> を満たすすべての整数jについて、
-        * 各データセットごとに、S<sub>ij</sub>の文字数をL<sub>ij</sub>とすると L<sub>ij</sub> = N<sub>i</sub>
+        * S<sub>ij</sub>の文字数をL<sub>ij</sub>とすると L<sub>ij</sub> = N<sub>i</sub>
         * S<sub>ij</sub>の各文字はすべて{'W', 'S', 'D'}のいずれか
 
 Output
