@@ -6,15 +6,16 @@ int main()
 {
   int N; cin >> N;
   while (N--) {
+    int cnt; cin >> cnt;
     string T; cin >> T;
-    int n = 1, len = T.length();
-    for (int i = 0; i < len && n > 0; ++i) {
+    int len = T.length();
+    for (int i = 0; i < len && cnt > 0; ++i) {
       if (T[i] == 'w') {
-        n += 3;
+        cnt += 3;
       } else {
-        n /= 2;
+        cnt /= 2;
       }
     }
-    cout << n << endl;
+    cout << cnt << endl;
   }
 }

@@ -5,8 +5,8 @@ int main() {
 	int	i, j, num, n;
 	scanf("%d", &n);
 	for(int j = 0; j < n; j++) {
+		scanf("%d", &num);
 		scanf("%s", s);
-		num = 1;
 		for(i = 0; i <= 100; i++) {
 			c = s[i];
 			if(c == '\0') {

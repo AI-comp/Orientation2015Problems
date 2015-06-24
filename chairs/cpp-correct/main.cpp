@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main() {
@@ -10,12 +11,17 @@ int main() {
         int m;
         cin >> m;
 
+        vector<int> children; 
         for ( int i = 0; i < m; i++ ) {
             int c;
             cin >> c;
-            int ans = ( t % n + c ) % n;
-            cout << ( i == 0 ? "" : " " ) << ans;
+            children.push_back(( t + c ) % n);
         }
+
+        sort(children.begin(), children.end());
+
+        for( int i = 0; i < m; i++)
+            cout << ( i == 0 ? "" : " " ) << children[i];
 
         cout << endl;
     }

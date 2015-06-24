@@ -1,7 +1,7 @@
 A+B
 =
 
-Problem Statemnt
+Problem Statement
 -
 
 与えられた二つの整数の和を求めよ。
@@ -56,7 +56,7 @@ Sample Output
 Sample Program
 -
 
-* C
+#### C
 
 ```
 #include <stdio.h>
@@ -77,7 +77,7 @@ int main() {
 }
 ```
 
-* Java
+#### Java
 
 ```
 import java.util.Scanner;
@@ -97,7 +97,7 @@ class Main {
 }
 ```
 
-* C++
+#### C++
 
 ```
 #include <iostream>
@@ -114,7 +114,7 @@ int main() {
 }
 ```
 
-* Python 3.3
+#### Python 3.3
 
 ```
 while 1:
@@ -125,7 +125,7 @@ while 1:
   print(answer)
 ```
 
-* Ruby 2.0
+#### Ruby 2.0
 
 ```
 while true
@@ -142,7 +142,7 @@ Note
 
 コンパイルやファイル入出力、プログラムの実行などは、プログラミング言語によって方法が異なるので注意すること。以下にはCとJavaの例を記載する。
 
-### C
+#### C
 
 * コンパイル・実行
 
@@ -169,7 +169,7 @@ gcc main.c
 ./a.out < in.txt > out.txt
 ```
 
-### Java
+#### Java
 
 * コンパイル・実行
 

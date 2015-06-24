@@ -4,12 +4,11 @@ using namespace std;
 
 int main() {
     string t;
-    int n;
+    int n, cnt;
 
     cin >> n;
     for ( int j = 0; j < n; j++ ) {
-        cin >> t;
-        int cnt = 1;
+        cin >> cnt >> t;
 
         for ( int i = 0; i < t.size(); i++ ) {
             if ( cnt > 0 ) {

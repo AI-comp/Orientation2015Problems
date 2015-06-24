@@ -3,8 +3,10 @@ import java.util.Scanner;
 public class Validator {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		for (int i = 0; i < n; i++) {
+		int d = sc.nextInt();
+		for (int i = 0; i < d; i++) {
+			int n = sc.nextInt();
+			checkRange(n, 1, 100);
 			String str = sc.next();
 			if (str.equals("end"))
 				break;

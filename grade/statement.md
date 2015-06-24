@@ -27,7 +27,9 @@ Problem Statement
 
 Input
 -
+
 入力は、以下の形式で表される。
+
 > N<br>
 > A<sub>1</sub> E<sub>1</sub><br>
 > A<sub>2</sub> E<sub>2</sub><br>
@@ -38,6 +40,7 @@ Input
 
 Constraints
 -
+
 入力は、以下の条件をすべて満たす。
 
 * 1 <= N <= 1000
@@ -47,10 +50,12 @@ Constraints
 
 Output
 -
+
 出力は、各学生に対する成績判定を1行で出力せよ。
 
 Sample Input
 -
+
     3
     12 70
     20 80
@@ -58,6 +63,7 @@ Sample Input
 
 Sample Output
 -
+
     A
     A+
     F

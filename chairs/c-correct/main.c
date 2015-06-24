@@ -1,13 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int comp( const void *c1, const void *c2 ) {
-	int tmp1 = *(int *)c1;
-	int tmp2 = *(int *)c2;
+void swap(int *a, int *b) {
+	int t = *a;
+	*a = *b;
+	*b = t;
+}
 
-	if( tmp1 < tmp2 )  return -1;
-	if( tmp1 == tmp2 ) return  0;
-	if( tmp1 > tmp2 )  return  1;
+void bubble_sort(int *c, int n){
+	int i, j;
+	for (i = 0; i < n; i++) {
+		for (j = i + 1; j < n; j++) {
+			if (c[i] > c[j]) {
+				swap(&c[i], &c[j]);
+			}
+		}
+	}
 }
 
 int main() {
@@ -25,7 +33,7 @@ int main() {
 			c[cnt] = (C + T) % N;
 			cnt++;
 		}
-		qsort(c, cnt, sizeof(int), comp);
+		bubble_sort(c, cnt);
 		for (i = 0; i < cnt; i++) {
 			if (i != 0) {
 				printf(" ");
